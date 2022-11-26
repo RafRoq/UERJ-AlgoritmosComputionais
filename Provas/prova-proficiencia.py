@@ -1,3 +1,29 @@
+'''
+Escreva um programa para simular a operação de um terminal bancário, com as seguintes operações:
+ Saque
+ Depósito (reabastecimento do terminal)
+ Histórico de saques e depósitos
+ Informar o saldo disponível
+Cada operação será implementada por meio de uma função e todas as funções serão chamadas na função
+principal (main). Inicialmente o terminal terá 100 (cem) cédulas (notas) de cada valor: R$100, R$50,
+R$20, R$10, R$5, R$2, R$1.
+Detalhamento das operações:
+Saque: solicitar um valor em reais (R$) e verificar se há disponibilidade de saldo. Em caso afirmativo,
+determinar e informar o número de notas para se obter esse valor. Caso contrário, emitir uma mensagem
+informando que não há saldo suficiente.
+Depósito: solicitar a quantidade de cada uma das cédulas e acrescentá-la à quantidade já existente de
+cada uma delas, atualizando o saldo disponível.
+Histórico de saques e depósitos: informar os valores sacados, como valores negativos, e os valores
+depositados, como valores positivos.
+Informar o saldo disponível: informar o total disponível considerando a quantidade existente de cada
+uma das cédulas.
+A função principal (main) deverá exibir um menu com as opções representando as operações e uma
+opção para encerramento do programa.
+Importante: na avaliação das soluções apresentadas, serão consideradas as estruturas usadas para
+construir o programa e as funções, apenas o abordado no curso.
+A solução da prova deverá ser feita em um único arquivo .py ou .ipynb
+'''
+
 class BankNote:
 
     def __init__(self, value: int) -> None:
